@@ -1,6 +1,6 @@
 package ru.job4j.inheritance;
 
-public class Programmer extends Engineer{
+public class Programmer extends Engineer {
     private String programLang;
 
     public Programmer(boolean degree, int experience, String programLang) {
