@@ -31,6 +31,7 @@ public class PointTest {
         double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
+
     @Test
     public void when00to06then6() {
         double expected = 6;
