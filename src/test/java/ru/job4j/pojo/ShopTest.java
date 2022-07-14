@@ -29,6 +29,6 @@ public class ShopTest {
         Product[] products = new Product[1];
         products[0] = new Product("Milk", 10);
         int rsl = Shop.indexOfNull(products);
-        assertThat(rsl, is(1));
+        assertThat(rsl, is(-1));
     }
 }
