@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class StartUI {
@@ -28,10 +29,11 @@ public class StartUI {
         for (int i = 0; i < menu.length; i++) {
             System.out.println(i + ". " + menu[i]);
         }
-
     }
 
     public static void main(String[] args) {
+        Item item = new Item();
+        System.out.println(item.getCreated().format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss")));
         Scanner scanner = new Scanner(System.in);
         Tracker tracker = new Tracker();
         new StartUI().init(scanner, tracker);
