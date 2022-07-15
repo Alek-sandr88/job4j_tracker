@@ -42,12 +42,11 @@ public class PointTest {
     }
 
     @Test
-    public void when00to06then12() {
+    public void when00to06then18() {
         double expected = 12;
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 6);
-        Point z = new Point(0, 6);
-        double out = a.distance3d(b) + a.distance3d(z);
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(0, 6, 0);
+        double out = a.distance3d(b) + a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
