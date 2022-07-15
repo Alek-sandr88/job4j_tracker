@@ -24,7 +24,7 @@ public class PointTest {
     }
 
     @Test
-    public void when20to03then36() {
+    public void when20to03then3dot6() {
         double expected = 3.6;
         Point a = new Point(2, 0);
         Point b = new Point(0, 3);
