@@ -5,6 +5,8 @@ import java.time.LocalDateTime;
 public class Item {
     private int id;
     private String name;
+    private LocalDateTime created = LocalDateTime.now();
+
 
     public Item() {
     }
@@ -18,7 +20,6 @@ public class Item {
         this.name = name;
     }
 
-    LocalDateTime created = LocalDateTime.now();
 
     public LocalDateTime getCreated() {
         return created;
