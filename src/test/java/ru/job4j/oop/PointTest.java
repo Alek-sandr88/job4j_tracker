@@ -42,8 +42,8 @@ public class PointTest {
     }
 
     @Test
-    public void when000to060then12() {
-        double expected = 12;
+    public void when000to060then6() {
+        double expected = 6;
         Point a = new Point(0, 0, 0);
         Point b = new Point(0, 6, 0);
         double out = a.distance3d(b);
