@@ -3,7 +3,7 @@ package ru.job4j.tracker;
 import java.util.Arrays;
 
 public class Tracker {
-    private Item[] items = new Item[100];
+    private final Item[] items = new Item[100];
     private int ids = 1;
     private int size = 0;
 
@@ -35,7 +35,7 @@ public class Tracker {
                     rsl[size] = this.items[i];
                     size++;
                 }
-                items = Arrays.copyOf(rsl, size);
+                rsl = Arrays.copyOf(rsl, size);
             }
         }
         return items;
