@@ -7,8 +7,8 @@ public class BackArray {
         String[] names = {"Petr", "Ivan", "Nik", "Vasya"};
         int middle = names.length / 2;
         for (int index = 0; index < middle; index++) {
-            String temp = names[index];
-            names[index] = names[index];
+            String temp = names[names.length - index - 1];
+            names[names.length - index - 1] = names[index];
             names[index] = temp;
         }
         System.out.println(Arrays.toString(names));
