@@ -6,7 +6,6 @@ public class Tracker {
     private final Item[] items = new Item[100];
     private int ids = 1;
     private int size = 0;
-    private Item item;
 
     public Item add(Item item) {
         item.setId(ids++);
@@ -30,6 +29,7 @@ public class Tracker {
         Item[] rsl = new Item[size];
         int count = 0;
         for (int i = 0; i < size; i++) {
+            Item item = items[i];
             if (key.equals(item.getName())) {
                 if (key.equals(item.getName())) {
                     rsl[count++] = this.items[i];
