@@ -37,5 +37,6 @@ public class StartUI {
         Scanner scanner = new Scanner(System.in);
         Tracker tracker = new Tracker();
         new StartUI().init(scanner, tracker);
+        System.out.println(item);
     }
 }
