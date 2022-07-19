@@ -45,7 +45,7 @@ public class Item {
         return "Item { "
                 + "id = " + id
                 + ", name = '" + name + '\''
-                + ", created = " + created.format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss")) +
-                '}';
+                + ", created = " + created.format(DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss"))
+                + '}';
     }
 }
