@@ -77,7 +77,6 @@ public class StartUI {
         }
     }
 
-
     private void showMenu() {
         String[] menu = {
                 "Добавить новый элемент", "Показать все элементы", "Изменить элемент",
