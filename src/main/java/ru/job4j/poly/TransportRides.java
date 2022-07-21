@@ -8,7 +8,7 @@ public class TransportRides {
         Vehicle[] vehicles = new Vehicle[]{vehicle, vehicle2, vehicle3};
         for (Vehicle veh: vehicles) {
             veh.move();
-            veh.travelTime();
+            veh.travelTime(4);
         }
     }
 }

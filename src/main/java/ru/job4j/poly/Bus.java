@@ -22,6 +22,7 @@ public class Bus implements Transport, Vehicle {
     }
 
     @Override
-    public void travelTime() {
+    public void travelTime(int time) {
+        System.out.println("Время в пути " + time);
     }
 }

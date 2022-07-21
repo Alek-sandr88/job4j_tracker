@@ -7,6 +7,7 @@ public class Train implements Vehicle {
     }
 
     @Override
-    public void travelTime() {
+    public void travelTime(int time) {
+        System.out.println("Время в пути " + time);
     }
 }
