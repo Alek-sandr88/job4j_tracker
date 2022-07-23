@@ -49,7 +49,6 @@ public class StartUI {
     public static void editItem(Input input, Tracker tracker) {
         System.out.println("=== Изменить элемент ===");
         int id = input.askInt("Введите идентификатор: ");
-        System.out.print("Введите имя: ");
         String name = input.askStr("Введите имя: ");
         Item item = new Item(name);
         if (tracker.replace(id, item)) {
